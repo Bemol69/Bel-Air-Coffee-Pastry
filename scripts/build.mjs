@@ -206,13 +206,9 @@ const GALERIA = [0, 1, 2, 3].map((col) => `
           <a href="https://www.instagram.com/${esc(T.instagram)}/" target="_blank" rel="noopener" class="gallery__item"><img src="${esc(g)}" alt="Foto de Bel Air en Instagram" loading="lazy" decoding="async"></a>`).join('')}
         </div>`).join('');
 
-// El manifiesto se parte en palabras (se van "pintando" al hacer scroll) con dos fotos redondas intercaladas
+// El manifiesto se parte en palabras (se van "pintando" al hacer scroll)
 const palabras = str(ajustes.manifiesto).split(/\s+/).filter(Boolean);
-const pills = ['img/productos/cappuccino.webp', 'img/lugar/perro-cliente.webp'];
-const MANIFIESTO = palabras.map((w, i) => {
-  const pill = i === Math.floor(palabras.length / 3) ? 0 : i === Math.floor((palabras.length * 2) / 3) ? 1 : -1;
-  return `${pill >= 0 ? `<span class="pill" aria-hidden="true"><img src="${pills[pill]}" alt="" loading="lazy"></span> ` : ''}<span class="w">${esc(w)}</span>`;
-}).join(' ');
+const MANIFIESTO = palabras.map((w) => `<span class="w">${esc(w)}</span>`).join(' ');
 
 const MARQUESINA = productos.slice(0, 14).map((p) => `<span>${esc(p.nombre)}</span><svg class="bean" aria-hidden="true"><use href="#i-bean"/></svg>`).join('');
 

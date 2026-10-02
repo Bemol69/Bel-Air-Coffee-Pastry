@@ -1,0 +1,15 @@
+{
+  "nombre": "Horno y antojos",
+  "bajada": "Para acompañar el café, o para llevar.",
+  "orden": 40,
+  "visible": true,
+  "productos": [
+    "brownie",
+    "croissant",
+    "pain-au-chocolat",
+    "rol-de-canela",
+    "muffins",
+    "galleta-new-york",
+    "galleta-new-york-kids"
+  ]
+}

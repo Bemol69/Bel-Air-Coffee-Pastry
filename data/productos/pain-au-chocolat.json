@@ -1,0 +1,10 @@
+{
+  "nombre": "Pain au chocolat",
+  "precio": 0,
+  "foto": "/img/productos/pain-au-chocolat.webp",
+  "descripcion": "Masa hojaldrada con chocolate, en su bolsita para llevar.",
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 190
+}

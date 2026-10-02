@@ -1,0 +1,10 @@
+{
+  "nombre": "Muffins",
+  "precio": 0,
+  "foto": "/img/productos/muffins.webp",
+  "descripcion": "De chocolate y con chips de chocolate.",
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 210
+}

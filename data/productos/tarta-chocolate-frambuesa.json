@@ -1,0 +1,10 @@
+{
+  "nombre": "Tarta de chocolate y frambuesa",
+  "precio": 0,
+  "foto": "/img/productos/tarta-chocolate-frambuesa.webp",
+  "descripcion": "Base de chocolate, crema y frambuesas bañadas en chocolate.",
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 140
+}

@@ -1,0 +1,10 @@
+{
+  "nombre": "Iced matcha",
+  "precio": 0,
+  "foto": "/img/productos/iced-matcha.webp",
+  "descripcion": "Matcha batido sobre leche fría y hielo.",
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 70
+}

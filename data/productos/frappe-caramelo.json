@@ -1,0 +1,10 @@
+{
+  "nombre": "Frappé de caramelo",
+  "precio": 0,
+  "foto": "/img/productos/frappe-caramelo.webp",
+  "descripcion": "Café helado, caramelo y una nube de crema.",
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 100
+}

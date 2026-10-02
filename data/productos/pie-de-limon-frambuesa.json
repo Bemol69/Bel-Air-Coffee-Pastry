@@ -1,0 +1,10 @@
+{
+  "nombre": "Pie de limón frambuesa",
+  "precio": 0,
+  "foto": "/img/productos/pie-de-limon-frambuesa.webp",
+  "descripcion": "Base crocante, crema de limón y frambuesa, coronado con merengue.",
+  "etiqueta": "Favorito",
+  "agotado": false,
+  "visible": true,
+  "orden": 110
+}

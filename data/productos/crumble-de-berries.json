@@ -1,0 +1,10 @@
+{
+  "nombre": "Crumble de berries",
+  "precio": 0,
+  "foto": "/img/productos/crumble-de-berries.webp",
+  "descripcion": "Berries con crumble dorado y crocante.",
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 150
+}

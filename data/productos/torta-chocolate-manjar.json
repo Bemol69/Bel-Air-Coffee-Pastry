@@ -1,0 +1,10 @@
+{
+  "nombre": "Torta de chocolate y manjar",
+  "precio": 0,
+  "foto": "/img/productos/torta-chocolate-manjar.webp",
+  "descripcion": "Bizcocho de chocolate en capas con manjar y crema.",
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 130
+}

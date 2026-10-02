@@ -1,0 +1,7 @@
+# Generados por scripts/build.mjs
+dist/
+data/catalogo.json
+.vercel
+
+# Material original del cliente (capturas, fotos pesadas): no se sube al repo
+material-cliente/

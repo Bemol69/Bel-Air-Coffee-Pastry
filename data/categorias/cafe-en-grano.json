@@ -1,0 +1,10 @@
+{
+  "nombre": "Café en grano",
+  "bajada": "Llévate un poquito de Bel Air a casa.",
+  "orden": 50,
+  "visible": true,
+  "productos": [
+    "cafe-llanquihue-tronador",
+    "cafe-llanquihue-calbuco"
+  ]
+}

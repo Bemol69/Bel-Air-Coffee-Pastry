@@ -1,0 +1,220 @@
+# Configuración del panel /admin (Sveltia CMS)
+# Cada cambio que se guarda aquí crea un commit en GitHub.
+# Vercel arma la web (scripts/build.mjs) y la publica en ~30 segundos.
+
+backend:
+  name: github
+  repo: %%GITHUB_REPO%%
+  branch: main
+  commit_messages:
+    create: "Web: crea {{collection}} «{{slug}}»"
+    update: "Web: actualiza {{collection}} «{{slug}}»"
+    delete: "Web: elimina {{collection}} «{{slug}}»"
+    uploadMedia: "Web: sube foto {{path}}"
+    deleteMedia: "Web: elimina foto {{path}}"
+
+site_url: %%SITE_URL%%
+display_url: %%SITE_URL%%
+logo_url: ../img/logo.jpg
+
+media_folder: img/productos
+public_folder: /img/productos
+
+# Nombres de archivo sin tildes ni ñ (ej: "Pie de limón" -> pie-de-limon.json)
+slug:
+  encoding: ascii
+  clean_accents: true
+  sanitize_replacement: "-"
+
+# Las fotos del celular se achican y convierten a WebP al subirlas, para que la web cargue rápido
+media_libraries:
+  default:
+    config:
+      transformations:
+        raster_image:
+          format: webp
+          quality: 82
+          width: 1400
+          height: 1400
+
+collections:
+  # ---------- CARTA ----------
+  - name: productos
+    label: Carta
+    label_singular: producto
+    description: "Todo lo que aparece en la carta (cafés, matcha, pasteles…). Para que un producto se vea en una pestaña, agrégalo desde «Categorías de la carta»."
+    icon: local_cafe
+    folder: data/productos
+    format: json
+    create: true
+    delete: true
+    identifier_field: nombre
+    slug: "{{nombre}}"
+    summary: "{{nombre}}"
+    thumbnail: foto
+    sortable_fields:
+      fields: [orden, nombre]
+      default:
+        field: orden
+        direction: ascending
+    fields:
+      - { name: nombre, label: Nombre, widget: string }
+      - name: foto
+        label: Foto
+        widget: image
+        hint: "Ideal una foto vertical (4:5), con buena luz y fondo limpio."
+      - name: descripcion
+        label: Descripción corta
+        widget: text
+        required: false
+        hint: "Una o dos líneas. Ej: Matcha cremoso con la leche que prefieras."
+      - name: precio
+        label: Precio
+        widget: number
+        value_type: int
+        min: 0
+        default: 0
+        required: false
+        hint: "Solo números, sin puntos ni $. Déjalo en 0 para no mostrar precio."
+      - name: etiqueta
+        label: Etiqueta
+        widget: string
+        required: false
+        hint: "Opcional, aparece sobre la foto. Ej: Favorito, Nuevo, De temporada."
+      - name: orden
+        label: Posición
+        widget: number
+        value_type: int
+        default: 1000
+        hint: "Los números más bajos aparecen primero."
+      - name: agotado
+        label: Agotado hoy
+        widget: boolean
+        default: false
+        hint: "Muestra «Agotado hoy» sobre la foto."
+      - name: visible
+        label: Mostrar en la web
+        widget: boolean
+        default: true
+        hint: "Desactívalo para esconderlo sin borrarlo (ej: producto de temporada)."
+
+  # ---------- CATEGORÍAS ----------
+  - name: categorias
+    label: Categorías de la carta
+    label_singular: categoría
+    description: "Las pestañas de la carta (Café, Pastelería…). Abre una para elegir qué productos aparecen en ella."
+    icon: tab
+    folder: data/categorias
+    format: json
+    create: true
+    delete: true
+    identifier_field: nombre
+    slug: "{{nombre}}"
+    summary: "{{nombre}}"
+    sortable_fields:
+      fields: [orden, nombre]
+      default:
+        field: orden
+        direction: ascending
+    fields:
+      - { name: nombre, label: Nombre de la pestaña, widget: string, hint: "Ej: Matcha y fríos" }
+      - { name: bajada, label: Frase corta, widget: string, required: false, hint: "Aparece junto al título. Ej: Hecha a mano, todos los días." }
+      - name: productos
+        label: Productos de esta pestaña
+        widget: relation
+        collection: productos
+        value_field: "{{slug}}"
+        search_fields: [nombre]
+        display_fields: ["{{nombre}}"]
+        multiple: true
+        required: false
+        hint: "Busca y marca los productos, en el orden en que quieres mostrarlos."
+      - { name: orden, label: Posición, widget: number, value_type: int, default: 100, hint: "Los números más bajos van primero." }
+      - { name: visible, label: Mostrar en la web, widget: boolean, default: true }
+
+  # ---------- SUCURSALES ----------
+  - name: sucursales
+    label: Sucursales
+    label_singular: sucursal
+    description: "Locales, direcciones, fotos y horarios. El horario de la primera sucursal también aparece al pie de la página."
+    icon: storefront
+    folder: data/sucursales
+    format: json
+    create: true
+    delete: true
+    identifier_field: nombre
+    slug: "{{nombre}}"
+    summary: "{{nombre}} · {{direccion}}"
+    thumbnail: foto
+    media_folder: /img/lugar
+    public_folder: /img/lugar
+    fields:
+      - { name: nombre, label: Nombre, widget: string, hint: "Ej: Barrio República" }
+      - { name: direccion, label: Dirección, widget: string }
+      - { name: comuna, label: Comuna, widget: string }
+      - { name: referencia, label: Cómo encontrarnos, widget: string, required: false, hint: "Ej: A pasos del metro República." }
+      - { name: foto, label: Foto principal, widget: image }
+      - { name: foto_2, label: Foto al pasar el mouse, widget: image, required: false }
+      - { name: maps_url, label: Link de Google Maps, widget: string, required: false, hint: "En Google Maps: Compartir → Copiar vínculo." }
+      - { name: etiqueta, label: Etiqueta, widget: string, required: false, hint: "Ej: Nueva" }
+      - name: horario
+        label: Horario
+        label_singular: tramo
+        widget: list
+        summary: "{{dias}}: {{abre}} – {{cierra}}"
+        hint: "Para el aviso «Abierto ahora» usa días como: Lunes a viernes, Sábados, Domingos y festivos, Lunes a domingo."
+        fields:
+          - { name: dias, label: Días, widget: string }
+          - { name: abre, label: Abre, widget: string, pattern: ['^\d{2}:\d{2}$', "Formato HH:MM, ej 08:00"] }
+          - { name: cierra, label: Cierra, widget: string, pattern: ['^\d{2}:\d{2}$', "Formato HH:MM, ej 21:00"] }
+      - { name: orden, label: Posición, widget: number, value_type: int, default: 100 }
+      - { name: visible, label: Mostrar en la web, widget: boolean, default: true }
+
+  # ---------- TEXTOS Y CONTACTO ----------
+  - name: ajustes
+    label: Textos y contacto
+    icon: settings
+    files:
+      - name: ajustes
+        label: Textos de la página, redes, reseñas y galería
+        file: data/ajustes.json
+        format: json
+        media_folder: /img/galeria
+        public_folder: /img/galeria
+        fields:
+          - { name: hero_titulo, label: "Portada · título", widget: string }
+          - { name: hero_destacado, label: "Portada · parte en cursiva", widget: string, required: false }
+          - { name: hero_bajada, label: "Portada · texto", widget: text }
+          - { name: manifiesto, label: "La casa · nuestra historia", widget: text, hint: "Se va «pintando» palabra por palabra al hacer scroll." }
+          - { name: tortas_titulo, label: "Tortas · título", widget: string }
+          - { name: tortas_texto, label: "Tortas · texto", widget: text }
+          - { name: pet_titulo, label: "Pet friendly · título", widget: string }
+          - { name: pet_texto, label: "Pet friendly · texto", widget: text }
+          - name: whatsapp
+            label: WhatsApp para encargos
+            widget: string
+            required: false
+            pattern: ['^(\+?[0-9 ]{10,17})?$', "Formato internacional, ej: 56912345678"]
+            hint: "Opcional. Con código de país y sin +. Si lo dejas vacío, el botón de tortas abre el chat de Instagram."
+          - { name: instagram, label: Usuario de Instagram, widget: string, required: false, hint: "Sin @" }
+          - { name: tiktok, label: Usuario de TikTok, widget: string, required: false, hint: "Sin @" }
+          - { name: email, label: Correo, widget: string, required: false }
+          - { name: ciudad, label: Ciudad, widget: string }
+          - { name: region, label: Región, widget: string, required: false }
+          - { name: rating, label: "Nota en Google", widget: string, required: false, hint: "Ej: 4,8" }
+          - { name: rating_total, label: "Cantidad de reseñas en Google", widget: string, required: false }
+          - name: resenas
+            label: Reseñas destacadas
+            label_singular: reseña
+            widget: list
+            summary: "{{autor}}: {{texto}}"
+            fields:
+              - { name: texto, label: Texto, widget: text }
+              - { name: autor, label: Autor, widget: string }
+              - { name: sucursal, label: Sucursal, widget: string, required: false }
+          - name: galeria
+            label: Galería (fotos cuadradas)
+            label_singular: foto
+            widget: list
+            hint: "Ideal 12 fotos. Se ordenan en 4 columnas."
+            field: { name: foto, label: Foto, widget: image }

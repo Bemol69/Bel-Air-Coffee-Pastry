@@ -1,0 +1,29 @@
+{
+  "nombre": "Providencia",
+  "comuna": "Providencia",
+  "direccion": "Dr. Manuel Barros Borgoño 178",
+  "referencia": "Nuestra sucursal más nueva.",
+  "foto": "/img/lugar/local-providencia-fachada.webp",
+  "foto_2": "/img/lugar/local-providencia-vitrina.webp",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Bel+air+coffee+%26+pastry+Doctor+Manuel+Barros+Borgo%C3%B1o+178+Providencia",
+  "horario": [
+    {
+      "dias": "Lunes a viernes",
+      "abre": "08:00",
+      "cierra": "21:00"
+    },
+    {
+      "dias": "Sábados",
+      "abre": "09:00",
+      "cierra": "21:00"
+    },
+    {
+      "dias": "Domingos y festivos",
+      "abre": "10:00",
+      "cierra": "20:00"
+    }
+  ],
+  "etiqueta": "Nueva",
+  "orden": 20,
+  "visible": true
+}

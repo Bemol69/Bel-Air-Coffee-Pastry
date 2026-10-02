@@ -1,0 +1,10 @@
+{
+  "nombre": "Cheesecake de maracuyá",
+  "precio": 0,
+  "foto": "/img/productos/cheesecake-maracuya.webp",
+  "descripcion": "Cremoso, con cubierta de maracuyá y sus semillas.",
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 120
+}

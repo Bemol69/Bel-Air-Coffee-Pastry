@@ -1,0 +1,10 @@
+{
+  "nombre": "Rol de canela",
+  "precio": 0,
+  "foto": "/img/productos/rol-de-canela.webp",
+  "descripcion": "Espiral de canela con glaseado.",
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 200
+}

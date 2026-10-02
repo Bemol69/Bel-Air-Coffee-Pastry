@@ -1,0 +1,10 @@
+{
+  "nombre": "Fríos de la casa",
+  "precio": 0,
+  "foto": "/img/productos/iced-matcha-y-cold-brew.webp",
+  "descripcion": "Matcha y café helado para los días de sol.",
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 90
+}

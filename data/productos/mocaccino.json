@@ -1,0 +1,10 @@
+{
+  "nombre": "Mocaccino",
+  "precio": 0,
+  "foto": "/img/productos/mocaccino.webp",
+  "descripcion": "Espresso, chocolate y leche, con cacao por encima.",
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 30
+}

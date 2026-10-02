@@ -1,0 +1,14 @@
+{
+  "nombre": "Pastelería",
+  "bajada": "Hecha a mano, todos los días.",
+  "orden": 30,
+  "visible": true,
+  "productos": [
+    "pie-de-limon-frambuesa",
+    "cheesecake-maracuya",
+    "torta-chocolate-manjar",
+    "tarta-chocolate-frambuesa",
+    "crumble-de-berries",
+    "pie-de-manzana"
+  ]
+}

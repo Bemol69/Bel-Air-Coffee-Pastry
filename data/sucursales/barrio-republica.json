@@ -1,0 +1,29 @@
+{
+  "nombre": "Barrio República",
+  "comuna": "Santiago",
+  "direccion": "Almirante Latorre 298",
+  "referencia": "A pasos del metro República, frente al Santa Isabel.",
+  "foto": "/img/lugar/local-republica-salon.webp",
+  "foto_2": "/img/lugar/local-republica-neon.webp",
+  "maps_url": "https://www.google.com/maps/search/?api=1&query=Bel+air+coffee+and+pastry+Almirante+Latorre+298+Santiago",
+  "horario": [
+    {
+      "dias": "Lunes a viernes",
+      "abre": "08:00",
+      "cierra": "21:00"
+    },
+    {
+      "dias": "Sábados",
+      "abre": "09:00",
+      "cierra": "21:00"
+    },
+    {
+      "dias": "Domingos y festivos",
+      "abre": "10:00",
+      "cierra": "20:00"
+    }
+  ],
+  "etiqueta": "Desde 2025",
+  "orden": 10,
+  "visible": true
+}

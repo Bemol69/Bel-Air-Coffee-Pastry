@@ -1,0 +1,49 @@
+{
+  "whatsapp": "",
+  "instagram": "belair__coffee",
+  "tiktok": "belaircoffee",
+  "email": "",
+  "ciudad": "Santiago",
+  "region": "Región Metropolitana",
+  "hero_titulo": "Café de especialidad y pastelería,",
+  "hero_destacado": "suave como el aire.",
+  "hero_bajada": "Una cafetería aesthetic en Barrio República y Providencia. Latte art, matcha, pasteles hechos a mano y un rincón donde tu perro también es bienvenido.",
+  "manifiesto": "Bel Air nació el 18 de marzo de 2025 en Barrio República con una idea simple: que cada café se sienta como un respiro. Granos de especialidad, pasteles hechos a mano y un lugar donde quedarse un rato más, con amigos, con el computador o con tu perro.",
+  "tortas_titulo": "Hechas para celebrar, listas para compartir.",
+  "tortas_texto": "Tortas y pasteles por encargo para cumpleaños, oficinas y esos días que merecen algo dulce. Cuéntanos qué celebras y la armamos contigo.",
+  "pet_titulo": "Tu perro también es cliente frecuente.",
+  "pet_texto": "Somos pet friendly: tráelo a tomar desayuno, siempre hay un rincón para él.",
+  "rating": "4,8",
+  "rating_total": "148",
+  "resenas": [
+    {
+      "texto": "Café exquisito!",
+      "autor": "Reseña en Google",
+      "sucursal": "Providencia"
+    },
+    {
+      "texto": "Muy rico los pasteles, me gustan los merenguitos.",
+      "autor": "Francisca S.",
+      "sucursal": "Barrio República"
+    },
+    {
+      "texto": "El café estaba delicioso y muy bien texturizado.",
+      "autor": "Yhonaiker H.",
+      "sucursal": "Barrio República"
+    }
+  ],
+  "galeria": [
+    "/img/galeria/ig-01.webp",
+    "/img/galeria/ig-02.webp",
+    "/img/galeria/ig-03.webp",
+    "/img/galeria/ig-04.webp",
+    "/img/galeria/ig-05.webp",
+    "/img/galeria/ig-06.webp",
+    "/img/galeria/ig-07.webp",
+    "/img/galeria/ig-08.webp",
+    "/img/galeria/ig-09.webp",
+    "/img/galeria/ig-10.webp",
+    "/img/galeria/ig-11.webp",
+    "/img/galeria/ig-12.webp"
+  ]
+}

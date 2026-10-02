@@ -1,0 +1,10 @@
+{
+  "nombre": "Matcha frutilla",
+  "precio": 0,
+  "foto": "/img/productos/matcha-frutilla.webp",
+  "descripcion": "Capas de frutilla, leche y matcha. Tan rico como se ve.",
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 80
+}

@@ -1,0 +1,10 @@
+{
+  "nombre": "Iced latte",
+  "precio": 0,
+  "foto": "/img/productos/iced-latte.webp",
+  "descripcion": "Nuestro latte en versión fría, ideal para llevar.",
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 50
+}

@@ -1,0 +1,13 @@
+{
+  "nombre": "Café",
+  "bajada": "Granos de especialidad, extraídos con calma.",
+  "orden": 10,
+  "visible": true,
+  "productos": [
+    "latte",
+    "cappuccino",
+    "mocaccino",
+    "espresso",
+    "iced-latte"
+  ]
+}

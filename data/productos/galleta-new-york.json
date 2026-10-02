@@ -1,0 +1,10 @@
+{
+  "nombre": "Galleta New York",
+  "precio": 0,
+  "foto": "/img/productos/galleta-new-york.webp",
+  "descripcion": "Gigante, con chips de chocolate y centro suave.",
+  "etiqueta": "Favorito",
+  "agotado": false,
+  "visible": true,
+  "orden": 220
+}

@@ -1,0 +1,10 @@
+{
+  "nombre": "Espresso",
+  "precio": 0,
+  "foto": "/img/productos/espresso.webp",
+  "descripcion": "Corto, intenso y aromático. Para ir directo al grano.",
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 40
+}

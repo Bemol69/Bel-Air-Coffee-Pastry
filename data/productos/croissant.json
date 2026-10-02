@@ -1,0 +1,10 @@
+{
+  "nombre": "Croissant",
+  "precio": 0,
+  "foto": "/img/productos/croissant.webp",
+  "descripcion": "Hojaldrado, dorado y recién horneado.",
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 180
+}

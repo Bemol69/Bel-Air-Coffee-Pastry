@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>%%SEO_TITULO%%</title>
+  <meta name="description" content="%%SEO_DESCRIPCION%%">
+  <meta name="theme-color" content="%%COLOR_CIELO%%">
+  <!-- SEO:HEAD (canonical, Open Graph y datos estructurados: los escribe scripts/build.mjs) -->
+  <link rel="icon" href="img/logo.jpg">
+  <link rel="apple-touch-icon" href="img/logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="%%FUENTES_URL%%">
+  <link rel="preload" as="image" href="img/ritual/ritual-latte-art.webp">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+  <!-- Iconos de línea (trazo 1.8, 24×24) + logo dibujado en SVG -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.5C5 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+      <symbol id="i-paw" viewBox="0 0 24 24"><ellipse cx="12" cy="16" rx="4.5" ry="3.8"/><circle cx="6" cy="10.5" r="1.9"/><circle cx="9.5" cy="6.5" r="1.9"/><circle cx="14.5" cy="6.5" r="1.9"/><circle cx="18" cy="10.5" r="1.9"/></symbol>
+      <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3.5 2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.8l-5.2 2.8 1-5.8-4.3-4.1 5.9-.8z"/></symbol>
+      <symbol id="i-quote" viewBox="0 0 24 24"><path d="M9.5 7C6.5 8 5 10.3 5 13.5V17h4.5v-4.5H7.2c0-1.8.9-3 2.8-3.7zM18.5 7c-3 1-4.5 3.3-4.5 6.5V17h4.5v-4.5h-2.3c0-1.8.9-3 2.8-3.7z"/></symbol>
+      <symbol id="i-bean" viewBox="0 0 24 24"><ellipse cx="12" cy="12" rx="6.5" ry="9" transform="rotate(30 12 12)"/><path d="M15.5 5.5c-4 3-3 9-7 13" /></symbol>
+      <symbol id="i-cup" viewBox="0 0 24 24"><path d="M4 9h13v5a6 6 0 0 1-6 6h-1a6 6 0 0 1-6-6zM17 11h1.5a2.5 2.5 0 0 1 0 5H17M8 2.5c0 1.5 1 1.5 1 3M12 2.5c0 1.5 1 1.5 1 3"/></symbol>
+      <symbol id="i-cake" viewBox="0 0 24 24"><path d="M4 20h16v-7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2zM4 15c1.5 1.3 3 1.3 4 0s2.5-1.3 4 0 2.5 1.3 4 0 2.5-1.3 4 0M12 11V8M12 5.5a1.2 1.2 0 1 0 0-.1"/></symbol>
+      <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6"/></symbol>
+      <symbol id="i-tiktok" viewBox="0 0 24 24"><path d="M14 3.5v11.2a3.7 3.7 0 1 1-3.7-3.7M14 3.5c.4 2.6 2.3 4.5 5 4.8"/></symbol>
+      <symbol id="i-wa" viewBox="0 0 24 24"><path d="M4.5 19.5l1.2-3.6A8 8 0 1 1 8.6 18.6z"/><path d="M9.2 8.6c.2-.5.5-.5.8-.5h.5c.2 0 .4 0 .5.4l.7 1.7c.1.2 0 .4-.1.6l-.5.6c.6 1.2 1.6 2.1 2.8 2.7l.6-.6c.2-.2.4-.2.6-.1l1.6.8c.3.1.3.3.3.5 0 .9-.8 1.7-1.7 1.7-3 0-6.4-3.2-6.4-6.3 0-.6.1-1.1.3-1.5z"/></symbol>
+      <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3c.6 4.6 3.4 7.4 8 8-4.6.6-7.4 3.4-8 8-.6-4.6-3.4-7.4-8-8 4.6-.6 7.4-3.4 8-8z"/></symbol>
+
+      <!-- Logo Bel Air: tajada de torta con cereza, granos de café y cinta -->
+      <symbol id="logo" viewBox="0 0 260 170">
+        <g class="lg-draw" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <path pathLength="1" d="M98 60 L150 42 L166 55 Z"/>
+          <path pathLength="1" d="M98 60 L166 55 L166 82 L98 86 Z"/>
+          <path pathLength="1" d="M100 71 l6-5 6 5 6-5 6 5 6-5 6 5 6-5 6 5 6-5 6 5 5-4"/>
+          <path pathLength="1" d="M134 49 c-2-8 6-12 11-8 c4-6 13-4 13 3 c6 1 6 8 0 10"/>
+          <path pathLength="1" d="M151 30 c1-9 5-14 12-17 M158 18 c6-5 13-3 14 3 c-6 3-11 2-14-3z"/>
+          <path pathLength="1" d="M46 94 Q130 76 214 94 L214 124 Q130 106 46 124 Z"/>
+          <path pathLength="1" d="M46 100 L16 104 L29 116 L14 130 L46 124 M214 100 L244 104 L231 116 L246 130 L214 124"/>
+          <g transform="translate(62 50) rotate(-35)"><ellipse pathLength="1" rx="7" ry="10"/><path pathLength="1" d="M1.5 -8.5 c-4 6 2 11 -2 17"/></g>
+          <g transform="translate(82 33) rotate(-15)"><ellipse pathLength="1" rx="6" ry="9"/><path pathLength="1" d="M1.5 -7.5 c-4 5 2 10 -2 15"/></g>
+          <g transform="translate(192 34) rotate(20)"><ellipse pathLength="1" rx="6" ry="9"/><path pathLength="1" d="M1.5 -7.5 c-4 5 2 10 -2 15"/></g>
+          <g transform="translate(210 54) rotate(40)"><ellipse pathLength="1" rx="7" ry="10"/><path pathLength="1" d="M1.5 -8.5 c-4 6 2 11 -2 17"/></g>
+        </g>
+        <circle class="lg-fill" cx="151" cy="33" r="6.5" fill="currentColor"/>
+        <path id="lg-curve" d="M56 117 Q130 99 204 117" fill="none"/>
+        <path id="lg-curve2" d="M66 150 Q130 140 194 150" fill="none"/>
+        <text class="lg-fill lg-text" fill="currentColor" font-size="27" letter-spacing="2" text-anchor="middle"><textPath href="#lg-curve" startOffset="50%">BEL AIR</textPath></text>
+        <text class="lg-fill lg-sub" fill="currentColor" font-size="11.5" letter-spacing="2.6" text-anchor="middle"><textPath href="#lg-curve2" startOffset="50%">COFFEE &amp; PASTRY</textPath></text>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- Intro: el logo se dibuja solo y el cielo se levanta -->
+  <div class="intro" aria-hidden="true">
+    <svg class="intro__logo"><use href="#logo"/></svg>
+    <p class="intro__line">Coffee &amp; Pastry · Santiago</p>
+  </div>
+
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="nav" data-nav>
+    <a class="nav__brand" href="#top" aria-label="%%NOMBRE%%, inicio">
+      <svg class="nav__logo" aria-hidden="true"><use href="#logo"/></svg>
+    </a>
+    <nav class="nav__links" aria-label="Principal">
+      <a href="#casa">La casa</a>
+      <a href="#carta">Carta</a>
+      <a href="#tortas">Tortas</a>
+      <a href="#sucursales">Sucursales</a>
+    </nav>
+    <a class="btn btn--sky btn--sm nav__cta" href="#sucursales">Visítanos</a>
+    <button class="nav__burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-movil"><span></span><span></span></button>
+  </header>
+  <div class="mobile-menu" id="menu-movil" hidden>
+    <a href="#casa">La casa</a><a href="#carta">Carta</a><a href="#tortas">Tortas</a><a href="#sucursales">Sucursales</a>
+    <!-- SI:INSTAGRAM --><a class="mobile-menu__small" href="https://www.instagram.com/%%INSTAGRAM%%/" target="_blank" rel="noopener">@%%INSTAGRAM%%</a><!-- /SI:INSTAGRAM -->
+  </div>
+
+  <main id="contenido">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="sky" aria-hidden="true"><i class="cloud c1"></i><i class="cloud c2"></i><i class="cloud c3"></i><i class="cloud c4"></i></div>
+      <div class="hero__inner wrap">
+        <div class="hero__copy">
+          <p class="eyebrow" data-hero-fade><svg class="ic" aria-hidden="true"><use href="#i-sparkle"/></svg> Barrio República · Providencia</p>
+          <h1 class="hero__title" data-split>%%HERO_TITULO%% <em>%%HERO_DESTACADO%%</em></h1>
+          <p class="hero__lead" data-hero-fade>%%HERO_BAJADA%%</p>
+          <div class="hero__actions" data-hero-fade>
+            <a class="btn btn--ink" href="#carta" data-magnetic>Ver la carta <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn--glass" href="#sucursales" data-magnetic><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg> Cómo llegar</a>
+          </div>
+        </div>
+
+        <div class="hero__art" data-parallax-root>
+          <figure class="arch arch--main" data-depth="0.6">
+            <img src="img/ritual/ritual-latte-art.webp" alt="Latte con latte art en vaso Bel Air" width="1120" height="1400">
+          </figure>
+          <figure class="blob blob--matcha" data-depth="1.4">
+            <img src="img/productos/matcha-latte.webp" alt="Matcha latte" width="600" height="600">
+          </figure>
+          <figure class="tile tile--cake" data-depth="1">
+            <img src="img/productos/pie-de-limon-frambuesa.webp" alt="Pie de limón frambuesa" width="600" height="750">
+          </figure>
+          <svg class="steam" viewBox="0 0 80 120" aria-hidden="true"><path d="M20 115c-12-18 12-28 0-48s10-30 2-52"/><path d="M42 115c-12-18 12-28 0-48s10-30 2-52"/><path d="M64 115c-12-18 12-28 0-48s10-30 2-52"/></svg>
+          <!-- SI:RATING -->
+          <div class="chip chip--rating" data-depth="1.8"><svg class="ic ic--fill" aria-hidden="true"><use href="#i-star"/></svg><strong>%%RATING%%</strong> en Google <small>%%RATING_TOTAL%% reseñas</small></div>
+          <!-- /SI:RATING -->
+          <div class="chip chip--pet" data-depth="2.2"><svg class="ic" aria-hidden="true"><use href="#i-paw"/></svg> Pet friendly</div>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#casa" aria-label="Bajar"><span></span></a>
+    </section>
+
+    <!-- ============ MARQUESINA ============ -->
+    <div class="ribbons" aria-hidden="true">
+      <div class="ribbon ribbon--teal"><div class="ribbon__track"><!-- RENDER:MARQUESINA --><!-- RENDER:MARQUESINA --></div></div>
+      <div class="ribbon ribbon--sky"><div class="ribbon__track ribbon__track--rev"><span>Cafetería de especialidad</span><svg class="bean"><use href="#i-sparkle"/></svg><span>Pastelería de alta calidad</span><svg class="bean"><use href="#i-sparkle"/></svg><span>Pet friendly</span><svg class="bean"><use href="#i-sparkle"/></svg><span>Hecho con amor</span><svg class="bean"><use href="#i-sparkle"/></svg><span>Cafetería de especialidad</span><svg class="bean"><use href="#i-sparkle"/></svg><span>Pastelería de alta calidad</span><svg class="bean"><use href="#i-sparkle"/></svg><span>Pet friendly</span><svg class="bean"><use href="#i-sparkle"/></svg><span>Hecho con amor</span><svg class="bean"><use href="#i-sparkle"/></svg></div></div>
+    </div>
+
+    <!-- ============ MANIFIESTO ============ -->
+    <section class="manifesto wrap" id="casa">
+      <p class="eyebrow" data-reveal>La casa</p>
+      <p class="manifesto__text" data-words><!-- RENDER:MANIFIESTO --></p>
+      <div class="stats" data-reveal>
+        <div><strong data-count="2">2</strong><span>sucursales</span></div>
+        <div><strong><span data-count="8">8</span>k</strong><span>amigos en Instagram</span></div>
+        <div><strong>18·03</strong><span>nuestro cumpleaños</span></div>
+      </div>
+    </section>
+
+    <!-- ============ RITUAL ============ -->
+    <section class="ritual" aria-labelledby="ritual-t">
+      <div class="wrap ritual__grid">
+        <div class="ritual__stage" aria-hidden="true">
+          <div class="ritual__frame">
+            <img class="is-on" src="img/ritual/ritual-molienda.webp" alt="" loading="lazy">
+            <img src="img/ritual/ritual-extraccion.webp" alt="" loading="lazy">
+            <img src="img/ritual/ritual-latte-art.webp" alt="" loading="lazy">
+            <img src="img/ritual/ritual-mesa.webp" alt="" loading="lazy">
+          </div>
+          <div class="ritual__progress"><span></span></div>
+        </div>
+        <div class="ritual__steps">
+          <p class="eyebrow">El ritual</p>
+          <h2 class="h2" id="ritual-t" data-split>Cada taza, <em>sin apuro.</em></h2>
+          <ol>
+            <li class="step is-on"><span class="step__n">01</span><h3>Molienda</h3><p>Molemos el grano justo antes de preparar, para que el aroma llegue intacto a tu taza.</p></li>
+            <li class="step"><span class="step__n">02</span><h3>Extracción</h3><p>Un espresso de especialidad, lento y dorado. La base de todo lo que preparamos.</p></li>
+            <li class="step"><span class="step__n">03</span><h3>Latte art</h3><p>Leche texturizada a mano (también vegetal) y un dibujo distinto en cada taza.</p></li>
+            <li class="step"><span class="step__n">04</span><h3>Primer sorbo</h3><p>Con un pastel recién hecho al lado. Esa es la combi infaltable.</p></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CARTA ============ -->
+    <section class="menu" id="carta" aria-labelledby="carta-t">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow" data-reveal>La carta</p>
+            <h2 class="h2" id="carta-t" data-split>Lo que vas a <em>querer probar.</em></h2>
+          </div>
+          <p class="section-head__aside" data-reveal>Preparamos todo en el local. La disponibilidad de pasteles cambia día a día: lo más rico se va temprano.</p>
+        </div>
+        <!-- RENDER:CARTA -->
+      </div>
+    </section>
+
+    <!-- ============ TORTAS ============ -->
+    <section class="cakes" id="tortas" aria-labelledby="tortas-t">
+      <div class="wrap cakes__grid">
+        <div class="cakes__media" data-reveal>
+          <div class="cakes__arch"><img src="img/tortas/tortas-celebrar.webp" alt="Tortas Bel Air para celebrar" loading="lazy"></div>
+          <svg class="badge-rot" viewBox="0 0 120 120" aria-hidden="true">
+            <path id="circ" d="M60 60m-44 0a44 44 0 1 1 88 0a44 44 0 1 1 -88 0" fill="none"/>
+            <text><textPath href="#circ">TORTAS POR ENCARGO · HECHAS A MANO · </textPath></text>
+            <use href="#i-cake" x="42" y="42" width="36" height="36"/>
+          </svg>
+        </div>
+        <div class="cakes__copy">
+          <p class="eyebrow" data-reveal>Por encargo</p>
+          <h2 class="h2" id="tortas-t" data-split>%%TORTAS_TITULO%%</h2>
+          <p class="lead" data-reveal>%%TORTAS_TEXTO%%</p>
+          <ul class="cakes__thumbs" data-reveal>
+            <li><img src="img/productos/torta-chocolate-manjar.webp" alt="Torta de chocolate y manjar" loading="lazy"></li>
+            <li><img src="img/productos/pie-de-limon-frambuesa.webp" alt="Pie de limón frambuesa" loading="lazy"></li>
+            <li><img src="img/productos/tarta-chocolate-frambuesa.webp" alt="Tarta de chocolate y frambuesa" loading="lazy"></li>
+          </ul>
+          <a class="btn btn--ink" href="%%ENCARGO_LINK%%" target="_blank" rel="noopener" data-magnetic data-reveal>
+            <svg class="ic" aria-hidden="true"><use href="#i-cake"/></svg> %%ENCARGO_TEXTO%%
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SUCURSALES ============ -->
+    <section class="places" id="sucursales" aria-labelledby="suc-t">
+      <div class="sky sky--soft" aria-hidden="true"><i class="cloud c1"></i><i class="cloud c3"></i></div>
+      <div class="wrap">
+        <div class="section-head section-head--center">
+          <p class="eyebrow" data-reveal>Visítanos</p>
+          <h2 class="h2" id="suc-t" data-split>Dos lugares, <em>el mismo cielo.</em></h2>
+        </div>
+        <div class="places__grid"><!-- RENDER:SUCURSALES -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PET FRIENDLY ============ -->
+    <section class="pet wrap" aria-labelledby="pet-t">
+      <div class="pet__card" data-reveal>
+        <div class="pet__copy">
+          <p class="eyebrow eyebrow--light"><svg class="ic" aria-hidden="true"><use href="#i-paw"/></svg> Pet friendly</p>
+          <h2 class="h2" id="pet-t">%%PET_TITULO%%</h2>
+          <p>%%PET_TEXTO%%</p>
+        </div>
+        <div class="pet__img"><img src="img/lugar/perro-cliente.webp" alt="Perrito acompañando un café en Bel Air" loading="lazy"></div>
+        <div class="paws" aria-hidden="true">
+          <svg><use href="#i-paw"/></svg><svg><use href="#i-paw"/></svg><svg><use href="#i-paw"/></svg><svg><use href="#i-paw"/></svg><svg><use href="#i-paw"/></svg><svg><use href="#i-paw"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESEÑAS ============ -->
+    <section class="reviews wrap" aria-labelledby="rev-t">
+      <div class="reviews__score" data-reveal>
+        <p class="eyebrow">Lo que dicen</p>
+        <h2 id="rev-t" class="reviews__big"><span data-count-dec="%%RATING%%">%%RATING%%</span></h2>
+        <div class="stars" aria-label="%%RATING%% de 5 estrellas"><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg><svg><use href="#i-star"/></svg></div>
+        <p>%%RATING_TOTAL%% reseñas en Google Maps</p>
+      </div>
+      <div class="reviews__list"><!-- RENDER:RESENAS -->
+      </div>
+    </section>
+
+    <!-- ============ GALERÍA ============ -->
+    <section class="gallery" aria-labelledby="gal-t">
+      <div class="wrap section-head">
+        <div>
+          <p class="eyebrow" data-reveal>Instagram</p>
+          <h2 class="h2" id="gal-t" data-split>Un poquito de <em>Bel Air.</em></h2>
+        </div>
+        <!-- SI:INSTAGRAM --><a class="btn btn--line" href="https://www.instagram.com/%%INSTAGRAM%%/" target="_blank" rel="noopener" data-reveal><svg class="ic" aria-hidden="true"><use href="#i-ig"/></svg> @%%INSTAGRAM%%</a><!-- /SI:INSTAGRAM -->
+      </div>
+      <div class="gallery__grid"><!-- RENDER:GALERIA -->
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="sky" aria-hidden="true"><i class="cloud c2"></i><i class="cloud c4"></i></div>
+    <div class="wrap footer__top">
+      <svg class="footer__logo" aria-hidden="true"><use href="#logo"/></svg>
+      <p class="footer__claim">Un café que se siente <em>como un respiro.</em></p>
+    </div>
+    <div class="wrap footer__cols">
+      <div>
+        <h3>Visítanos</h3>
+        <!-- RENDER:FOOTER_DIRECCIONES -->
+      </div>
+      <div>
+        <h3>Horario</h3>
+        <!-- RENDER:FOOTER_HORARIO -->
+      </div>
+      <div>
+        <h3>Síguenos</h3>
+        <div class="social">
+          <!-- SI:INSTAGRAM --><a href="https://www.instagram.com/%%INSTAGRAM%%/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="ic"><use href="#i-ig"/></svg></a><!-- /SI:INSTAGRAM -->
+          <!-- SI:TIKTOK --><a href="https://www.tiktok.com/@%%TIKTOK%%" target="_blank" rel="noopener" aria-label="TikTok"><svg class="ic"><use href="#i-tiktok"/></svg></a><!-- /SI:TIKTOK -->
+          <!-- SI:WHATSAPP --><a href="https://api.whatsapp.com/send?phone=%%WHATSAPP%%" target="_blank" rel="noopener" aria-label="WhatsApp"><svg class="ic"><use href="#i-wa"/></svg></a><!-- /SI:WHATSAPP -->
+        </div>
+        <!-- SI:EMAIL --><p><a href="mailto:%%EMAIL%%">%%EMAIL%%</a></p><!-- /SI:EMAIL -->
+      </div>
+    </div>
+    <p class="footer__word" aria-hidden="true">Bel Air</p>
+    <div class="wrap footer__legal">
+      <span>© %%ANIO%% %%NOMBRE%%</span>
+      <span>Cafetería de especialidad · Santiago, Chile</span>
+    </div>
+  </footer>
+
+  <!-- Tacita que se llena con el scroll (vuelve arriba) -->
+  <a class="cup-top" href="#top" aria-label="Volver arriba">
+    <svg viewBox="0 0 48 48" aria-hidden="true">
+      <defs><clipPath id="cup-clip"><path d="M10 16h24v10a12 12 0 0 1-12 12 12 12 0 0 1-12-12z"/></clipPath></defs>
+      <rect class="cup-top__fill" x="8" y="16" width="28" height="24" clip-path="url(#cup-clip)"/>
+      <path class="cup-top__line" d="M10 16h24v10a12 12 0 0 1-12 12 12 12 0 0 1-12-12zM34 19h3a4 4 0 0 1 0 8h-3"/>
+      <path class="cup-top__steam" d="M17 6c-2 3 2 4 0 7M23 5c-2 3 2 4 0 7M29 6c-2 3 2 4 0 7"/>
+    </svg>
+  </a>
+
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>

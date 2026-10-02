@@ -1,0 +1,10 @@
+{
+  "nombre": "Latte",
+  "precio": 0,
+  "foto": "/img/productos/latte.webp",
+  "descripcion": "Espresso de especialidad con leche texturizada y latte art de la casa.",
+  "etiqueta": "Favorito",
+  "agotado": false,
+  "visible": true,
+  "orden": 10
+}

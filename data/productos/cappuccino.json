@@ -1,0 +1,10 @@
+{
+  "nombre": "Cappuccino",
+  "precio": 0,
+  "foto": "/img/productos/cappuccino.webp",
+  "descripcion": "Equilibrio clásico: espresso, leche y una espuma sedosa.",
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 20
+}

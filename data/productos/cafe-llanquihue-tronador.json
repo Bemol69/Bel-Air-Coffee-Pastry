@@ -1,0 +1,10 @@
+{
+  "nombre": "Café en grano Tronador",
+  "precio": 0,
+  "foto": "/img/productos/cafe-llanquihue-tronador.webp",
+  "descripcion": "Café Llanquihue de especialidad para preparar en casa. Notas cítricas.",
+  "etiqueta": "Para llevar",
+  "agotado": false,
+  "visible": true,
+  "orden": 240
+}

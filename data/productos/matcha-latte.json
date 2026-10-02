@@ -1,0 +1,10 @@
+{
+  "nombre": "Matcha latte",
+  "precio": 0,
+  "foto": "/img/productos/matcha-latte.webp",
+  "descripcion": "Matcha cremoso con la leche que prefieras, también vegetal.",
+  "etiqueta": "Favorito",
+  "agotado": false,
+  "visible": true,
+  "orden": 60
+}

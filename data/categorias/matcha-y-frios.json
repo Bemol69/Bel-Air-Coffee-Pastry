@@ -1,0 +1,13 @@
+{
+  "nombre": "Matcha y fríos",
+  "bajada": "Verdes, frescos y muy fotogénicos.",
+  "orden": 20,
+  "visible": true,
+  "productos": [
+    "matcha-latte",
+    "iced-matcha",
+    "matcha-frutilla",
+    "iced-matcha-y-cold-brew",
+    "frappe-caramelo"
+  ]
+}

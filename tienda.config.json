@@ -1,0 +1,28 @@
+{
+  "_ayuda": "Datos fijos del sitio (los define el desarrollador). Textos, carta y sucursales se editan desde /admin.",
+  "nombre": "Bel Air Coffee & Pastry",
+  "rubro": "Cafetería de especialidad y pastelería",
+  "schema_tipo": "CafeOrCoffeeShop",
+  "seo_titulo": "Bel Air Coffee & Pastry | Cafetería de especialidad en Santiago y Providencia",
+  "seo_descripcion": "Cafetería de especialidad y pastelería de alta calidad en Barrio República (Almirante Latorre 298) y Providencia. Latte, matcha, tortas por encargo y pet friendly.",
+  "github_repo": "Bemol69/Bel-Air-Coffee-Pastry",
+  "site_url": "https://bel-air-coffee.vercel.app",
+  "google_verificacion": "",
+  "og_imagen": "img/ritual/ritual-mesa.webp",
+  "fuentes": {
+    "titulos": "Fraunces",
+    "texto": "Manrope"
+  },
+  "colores": {
+    "cielo": "#9EE0FF",
+    "cielo_claro": "#DDF3FF",
+    "bruma": "#F4FBFF",
+    "turquesa": "#14918C",
+    "turquesa_oscuro": "#0B5F5C",
+    "menta": "#BFE6DC",
+    "crema": "#FFF8EC",
+    "espresso": "#231B17",
+    "espresso_suave": "#5E524B",
+    "caramelo": "#B9774A"
+  }
+}

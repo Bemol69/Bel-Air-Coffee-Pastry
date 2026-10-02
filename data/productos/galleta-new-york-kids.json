@@ -1,0 +1,10 @@
+{
+  "nombre": "Galleta New York Kids",
+  "precio": 0,
+  "foto": "/img/productos/galleta-new-york-kids.webp",
+  "descripcion": "La versión con colores, para los más chicos (y los no tan chicos).",
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 230
+}

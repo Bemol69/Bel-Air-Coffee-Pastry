@@ -1,0 +1,10 @@
+{
+  "nombre": "Pie de manzana",
+  "precio": 0,
+  "foto": "/img/productos/pie-de-manzana.webp",
+  "descripcion": "Masa casera con relleno de manzana.",
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 160
+}

@@ -1,0 +1,10 @@
+{
+  "nombre": "Café en grano Calbuco",
+  "precio": 0,
+  "foto": "/img/productos/cafe-llanquihue-calbuco.webp",
+  "descripcion": "Café Llanquihue de especialidad para preparar en casa. Notas dulces y achocolatadas.",
+  "etiqueta": "Para llevar",
+  "agotado": false,
+  "visible": true,
+  "orden": 250
+}

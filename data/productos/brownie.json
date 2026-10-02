@@ -1,0 +1,10 @@
+{
+  "nombre": "Brownie",
+  "precio": 0,
+  "foto": "/img/productos/brownie.webp",
+  "descripcion": "El clásico que no puede faltar, húmedo y chocolatoso.",
+  "etiqueta": "",
+  "agotado": false,
+  "visible": true,
+  "orden": 170
+}
